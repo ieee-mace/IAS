@@ -1113,7 +1113,7 @@ header #site-header-inner {
   display: -ms-flexbox;
   display: -webkit-flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
 }
 header #site-header-inner #site-logo {
   flex-shrink: 0;
