@@ -16,9 +16,12 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
     <!--Tailwind cdn-->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="tailwind-css/output.css">
 
-    
+
+
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logoo.png">
     <link rel="apple-touch-icon-precomposed" href="images/logoo.png">
@@ -35,7 +38,7 @@
 
     <div id="wrapper" class="wrapper-style">
         <div id="page" class="clearfix">
-            <header class="header">
+            <header class="header" id="events-header">
                 <div class="tf-container">
                     <div class="row">
                         <div class="col-md-12">                              
@@ -133,7 +136,7 @@
                     </div>
                 </div>
                 <div class="main-heading  text-center p-5 items-center">
-                    <h1 class="font-sans text-white text-8xl font-normal">Events</h1>
+                    <h1 class="text-white text-8xl font-normal">Events</h1>
                     <div class="sub-nav mt-10">
                         <a href="#">Home</a> /
                         <a href="#">Events</a>
@@ -142,30 +145,95 @@
 
             </header>
 
-            <div class="content mt-20 pl-20 pr-5">
-                <section id="event-1" class="grid gap-11 mt-32  md:grid-cols-2">
+        <div class="content my-32">
+                <section id="event-1" class="grid gap-y-16 my-32 px-10 md:grid-cols-3 md:gap-x-16 md:px-20">
                     <div class="flex justify-center items-center">
-                        <img class="w-full lg:w-4/5" src="images/events/p2.jpeg">
+                        <img class="w-full" src="images/events/p7.jpg">
                     </div>
-                    <div>
-                        <h1 class="text-5xl text-white py-5">Lorem, ipsum dolor.</h1>
+                    <div class="md:col-span-2">
+                        <h1 class="text-5xl text-white pb-12">CMD AWARENESS SESSION</h1>
+                        <p class="text-[1.7rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam incidunt temporibus veritatis, mollitia vitae reprehenderit ad maxime, nam fugiat alias deleniti consectetur quidem quam at odio? Perferendis rerum earum facilis. Impedit, earum veniam. Quos, et. Numquam fugit veritatis nesciunt, laboriosam consequatur voluptas, pariatur quos ipsum minima sed laudantium culpa eligendi nostrum ratione illum aut perferendis excepturi. Officiis fugit dolorum ab illo nemo alias vitae praesentium, quae maxime quod fugiat eligendi. Veniam consectetur enim ab distinctio, quo vitae perspiciatis reiciendis nobis aut perferendis voluptatem, sed laboriosam molestiae officiis ipsa atque neque possimus quam nesciunt accusantium soluta provident ipsum cupiditate? Beatae, ratione!
+                        </p>
+
+                    </div>
+                </section>
+
+                <section id="event-2" class="grid gap-y-16 my-32 px-10 md:grid-cols-3 md:gap-x-16 md:px-20">
+                    <div class="flex justify-center items-center">
+                        <img class="w-full" src="images/events/p1.jpeg">
+                    </div>
+                    <div class="md:col-span-2">
+                        <h1 class="text-5xl text-white pb-12">INTRODUCTION TO MATLAB</h1>
                         <p class="text-[1.7rem]">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla tempore, corrupti minima temporibus a rerum repellat accusamus laboriosam, praesentium eius dicta tempora asperiores. Nemo non inventore quod id aspernatur autem. Architecto, nobis ab repudiandae, praesentium aperiam officia quibusdam velit voluptatibus molestiae impedit dolorem cum quas quam provident minus mollitia illum cumque placeat enim vitae beatae! Dolores expedita animi quae cum officia voluptates, assumenda molestiae omnis delectus quas harum vitae eos. Quam quis neque doloremque.
                         </p>
                     </div>
                 </section>
 
-                <section id="event-2" class="grid gap-10 mt-32 pb-20 md:grid-cols-2">
+                <section id="event-3" class="grid gap-y-16 my-32 px-10 md:grid-cols-3 md:gap-x-16 md:px-20">
                     <div class="flex justify-center items-center">
-                        <img class="w-full lg:w-4/5" src="images/events/p1.jpeg">
+                        <img class="w-full" src="images/events/p6.jpg">
                     </div>
-                    <div>
-                        <h1 class="text-5xl text-white py-5">Lorem, ipsum dolor.</h1>
+                    <div class="md:col-span-2">
+                        <h1 class="text-5xl text-white pb-12">ARDUINO DAY</h1>
                         <p class="text-[1.7rem]">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla tempore, corrupti minima temporibus a rerum repellat accusamus laboriosam, praesentium eius dicta tempora asperiores. Nemo non inventore quod id aspernatur autem. Architecto, nobis ab repudiandae, praesentium aperiam officia quibusdam velit voluptatibus molestiae impedit dolorem cum quas quam provident minus mollitia illum cumque placeat enim vitae beatae! Dolores expedita animi quae cum officia voluptates, assumenda molestiae omnis delectus quas harum vitae eos. Quam quis neque doloremque.
                         </p>
                     </div>
                 </section>
+
+                <section id="event-4" class="grid gap-y-16 my-32 px-10 md:grid-cols-3 md:gap-x-16 md:px-20">
+                    <div class="flex justify-center items-center">
+                        <img class="w-full" src="images/events/p5.jpg">
+                    </div>
+                    <div class=" md:pr-5 md:col-span-2">
+                        <h1 class="text-5xl text-white pb-12">TINYML HANDS-ON SESSION</h1>
+                        <p class="text-[1.7rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla tempore, corrupti minima temporibus a rerum repellat accusamus laboriosam, praesentium eius dicta tempora asperiores. Nemo non inventore quod id aspernatur autem. Architecto, nobis ab repudiandae, praesentium aperiam officia quibusdam velit voluptatibus molestiae impedit dolorem cum quas quam provident minus mollitia illum cumque placeat enim vitae beatae! Dolores expedita animi quae cum officia voluptates, assumenda molestiae omnis delectus quas harum vitae eos. Quam quis neque doloremque.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="event-5" class="grid gap-y-16 my-32 px-10 md:grid-cols-3 md:gap-x-16 md:px-20">
+                    <div class="flex justify-center items-center">
+                        <img class="w-full" src="images/events/p2.jpeg">
+                    </div>
+                    <div class="md:col-span-2">
+                        <h1 class="text-5xl text-white pb-12">AWARENESS SESSION ON EV HACK 3.0
+                        </h1>
+                        <p class="text-[1.7rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla tempore, corrupti minima temporibus a rerum repellat accusamus laboriosam, praesentium eius dicta tempora asperiores. Nemo non inventore quod id aspernatur autem. Architecto, nobis ab repudiandae, praesentium aperiam officia quibusdam velit voluptatibus molestiae impedit dolorem cum quas quam provident minus mollitia illum cumque placeat enim vitae beatae! Dolores expedita animi quae cum officia voluptates, assumenda molestiae omnis delectus quas harum vitae eos. Quam quis neque doloremque.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="event-6" class="grid gap-y-16 my-32 px-10 md:grid-cols-3 md:gap-x-16 md:px-20">
+                    <div class="flex justify-center items-center">
+                        <img class="w-full" src="images/events/p3.jpeg">
+                    </div>
+                    <div class="md:col-span-2">
+                        <h1 class="text-5xl text-white pb-12">INSPIRON - MEMBERSHIP DEVELOPMENT SESSION
+                        </h1>
+                        <p class="text-[1.7rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla tempore, corrupti minima temporibus a rerum repellat accusamus laboriosam, praesentium eius dicta tempora asperiores. Nemo non inventore quod id aspernatur autem. Architecto, nobis ab repudiandae, praesentium aperiam officia quibusdam velit voluptatibus molestiae impedit dolorem cum quas quam provident minus mollitia illum cumque placeat enim vitae beatae! Dolores expedita animi quae cum officia voluptates, assumenda molestiae omnis delectus quas harum vitae eos. Quam quis neque doloremque.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="event-7" class="grid gap-y-16 my-32 px-10 md:grid-cols-3 md:gap-x-16 md:px-20">
+                    <div class="flex justify-center items-center">
+                        <img class="w-full" src="images/events/p4.jpeg">
+                    </div>
+                    <div class="md:col-span-2">
+                        <h1 class="text-5xl text-white pb-12">ECOPITCH</h1>
+                        <p class="text-[1.7rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla tempore, corrupti minima temporibus a rerum repellat accusamus laboriosam, praesentium eius dicta tempora asperiores. Nemo non inventore quod id aspernatur autem. Architecto, nobis ab repudiandae, praesentium aperiam officia quibusdam velit voluptatibus molestiae impedit dolorem cum quas quam provident minus mollitia illum cumque placeat enim vitae beatae! Dolores expedita animi quae cum officia voluptates, assumenda molestiae omnis delectus quas harum vitae eos. Quam quis neque doloremque.
+                        </p>
+                    </div>
+                </section>
+
+                
             </div>
 
             <footer id="footer" class="footer">
