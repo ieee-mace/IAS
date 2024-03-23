@@ -1172,9 +1172,10 @@ header.absolute {
   border-bottom: none;
   z-index: 100;
 }
-header{
+
+#events-header{
   height:35rem;
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/images/events-header-bg.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/events-header-bg.jpg);
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover; 
