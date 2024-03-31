@@ -544,10 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
 .my-32 {
   margin-top: 8rem;
   margin-bottom: 8rem;
@@ -557,8 +553,8 @@ video {
   margin-top: 2.5rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
+.block {
+  display: block;
 }
 
 .flex {
@@ -581,73 +577,17 @@ video {
   justify-content: center;
 }
 
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.gap-16 {
-  gap: 4rem;
-}
-
-.gap-x-16 {
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
-}
-
 .gap-y-16 {
   row-gap: 4rem;
-}
-
-.gap-y-2 {
-  row-gap: 0.5rem;
-}
-
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
 }
 
 .p-5 {
   padding: 1.25rem;
 }
 
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
 }
 
 .pb-12 {
@@ -681,25 +621,13 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[1\.\] {
-  color: 1.;
-}
-
 @media (min-width: 768px) {
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:gap-y-16 {
-    row-gap: 4rem;
   }
 
   .md\:gap-x-16 {
@@ -707,46 +635,12 @@ video {
          column-gap: 4rem;
   }
 
-  .md\:gap-x-20 {
-    -moz-column-gap: 5rem;
-         column-gap: 5rem;
-  }
-
-  .md\:gap-x-32 {
-    -moz-column-gap: 8rem;
-         column-gap: 8rem;
-  }
-
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .md\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
   }
 
-  .md\:pl-10 {
-    padding-left: 2.5rem;
-  }
-
   .md\:pr-5 {
     padding-right: 1.25rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:w-3\/4 {
-    width: 75%;
-  }
-
-  .lg\:gap-0 {
-    gap: 0px;
   }
 }
