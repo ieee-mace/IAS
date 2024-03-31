@@ -1173,6 +1173,14 @@ header.absolute {
   z-index: 100;
 }
 
+#events-header{
+  height:35rem;
+  background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/events-header-bg.jpg);
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
 /* Site Logo
 -------------------------------------------------------------- */
 /* Menu
