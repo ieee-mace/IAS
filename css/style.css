@@ -2747,3 +2747,75 @@ header.absolute {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.dlp {
+  width: 100dvw;
+  min-height: 100dvh;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dlp h2{
+  text-align: center;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+.dlp h4{
+  padding-top: 20px;
+  font-size: 32px
+}
+
+.dlp_content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.dlp p {
+  align-content: space-around;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 50%;
+  padding-top: 30px;
+  font-size: 16px;
+}
+.dlp_content div{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dlp img{
+  width: 75%;
+  z-index: -1;
+  box-shadow: #78b942 1px 1px 20px;
+}
+@media screen and (max-width: 768px) {
+  .dlp h2{
+    font-size: 30px;
+  }
+  .dlp h4{
+    font-size: 24px;
+  }
+  .dlp_content{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .dlp_content div{
+    width: 100%;
+    padding-top: 10px;
+  }
+  .dlp p {
+    width: 100%;
+  }
+  .dlp img{
+    width: 100%;
+    height: 100%;
+  }
+}
