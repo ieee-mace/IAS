@@ -2819,3 +2819,71 @@ header.absolute {
     height: 100%;
   }
 }
+
+
+/* Achievements Section Styling */
+#achievements {
+  padding: 60px 0;
+}
+
+.achievement-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.achievement-wrapper:hover {
+  transform: translateY(-5px);
+}
+
+.image-achievement {
+  flex: 0 0 400px;
+}
+
+.image-achievement img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.content-achievement {
+  flex: 1;
+  text-align: justify;
+}
+
+.content-achievement p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #888B8E;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .achievement-wrapper {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+  }
+
+  .image-achievement {
+      flex: 0 0 100%;
+  }
+
+  .content-achievement p {
+    font-size: 14px;
+    text-align: justify;
+}
+}
+
+@media (max-width: 576px) {
+
+  .achievement-wrapper {
+      padding: 15px;
+  }
+
+  .content-achievement p {
+      font-size: 12px;
+      text-align: justify;
+  }
+}
