@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ══════════════════════════════════════════════════════════════════
+   INDUSTRIAL SIGNAL — Design System CSS
+   IEEE IAS SBC MACE
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── Theme Variables ─────────────────────────────────────────────── */
+:root {
+  --color-bg: #F0FFF4;
+  --color-surface: #FFFFFF;
+  --color-surface2: #ECFDF5;
+  --color-primary: #166534;
+  --color-primary-bright: #16A34A;
+  --color-primary-muted: #DCFCE7;
+  --color-accent: #D97706;
+  --color-text-primary: #0D2818;
+  --color-text-secondary: #4A7C5E;
+  --color-border: #BBF7D0;
+  --color-glow: rgba(22, 163, 74, 0.12);
+}
+
+.dark {
+  --color-bg: #080C0A;
+  --color-surface: #0D1411;
+  --color-surface2: #111C17;
+  --color-primary: #1A7A4A;
+  --color-primary-bright: #22C55E;
+  --color-primary-muted: #0F4A2E;
+  --color-accent: #F7B731;
+  --color-text-primary: #E8F5EE;
+  --color-text-secondary: #7FA693;
+  --color-border: #1A2E23;
+  --color-glow: rgba(34, 197, 94, 0.15);
+}
+
+/* ── Base Reset ──────────────────────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* ── Text Selection ──────────────────────────────────────────────── */
+::selection {
+  background: #22C55E;
+  color: #080C0A;
+}
+
+::-moz-selection {
+  background: #22C55E;
+  color: #080C0A;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-bright);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) var(--color-bg);
+}
+
+/* ── Section Backgrounds ─────────────────────────────────────────── */
+.section-odd {
+  background-color: var(--color-bg);
+}
+
+.section-even {
+  background-color: var(--color-surface);
+}
+
+/* ── Section Padding ─────────────────────────────────────────────── */
+.section-padding {
+  @apply py-16 md:py-24 px-4 md:px-8 lg:px-16;
+}
+
+/* ── Scanline Overlay ────────────────────────────────────────────── */
+.scanlines::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    transparent 0px,
+    transparent 3px,
+    rgba(0, 0, 0, 0.15) 3px,
+    rgba(0, 0, 0, 0.15) 4px
+  );
+  z-index: 1;
+}
+
+/* ── Brushed Metal Texture ───────────────────────────────────────── */
+.brushed-metal::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 2px,
+    rgba(34, 197, 94, 0.015) 2px,
+    rgba(34, 197, 94, 0.015) 4px
+  );
+  z-index: 0;
+}
+
+/* ── Link Hover Underline (left-to-right draw) ───────────────────── */
+.link-draw {
+  position: relative;
+  text-decoration: none;
+}
+
+.link-draw::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.link-draw:hover::after {
+  width: 100%;
+}
+
+/* ── Gold Sweep Effect (achievements) ────────────────────────────── */
+.gold-sweep-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.gold-sweep-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(247, 183, 49, 0.15) 40%,
+    rgba(247, 183, 49, 0.25) 50%,
+    rgba(247, 183, 49, 0.15) 60%,
+    transparent 100%
+  );
+  transform: translateY(-100%);
+  transition: transform 0.6s ease-in-out;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.gold-sweep-container:hover::after {
+  transform: translateY(100%);
+}
+
+/* ── Focus Visible ───────────────────────────────────────────────── */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-primary-bright);
+  outline-offset: 2px;
+}
+
+/* ── Image Placeholder ───────────────────────────────────────────── */
+.img-placeholder {
+  background-color: #0F4A2E;
+}
+
+/* ── Divider Bar ─────────────────────────────────────────────────── */
+.divider-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.divider-bar::before,
+.divider-bar::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-border);
+}
+
+/* ── Vertical Label (rotated sidebar text) ───────────────────────── */
+.vertical-label {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  opacity: 0.5;
+}
+
+/* ── Swiper (kept for Gallery if needed) ─────────────────────────── */
+.swiper-pagination-bullet {
+  background: var(--color-primary) !important;
+}
+.swiper-pagination-bullet-active {
+  background: var(--color-accent) !important;
+}
+
+/* ── CRT Scanlines (startup animation) ───────────────────────────── */
+.crt-scanlines {
+  background: repeating-linear-gradient(
+    transparent 0px,
+    transparent 3px,
+    rgba(0, 0, 0, 0.3) 3px,
+    rgba(0, 0, 0, 0.3) 4px
+  );
+  pointer-events: none;
+}
+
+/* ── 3D Flip Card Utilities ──────────────────────────────────────── */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
