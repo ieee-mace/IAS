@@ -18,7 +18,7 @@ const EventRow = ({ event, index = 0 }) => {
       viewport={{ once: true, margin: "0px 0px -50px 0px" }}
       transition={{ duration: 0.5, delay: Math.min(index * 0.08, 0.4), ease: 'easeOut' }}
       onClick={() => setIsExpanded(!isExpanded)}
-      className="group flex items-stretch border-b border-brand-border hover:bg-brand-surface transition-colors duration-150 cursor-pointer"
+      className="group flex items-stretch border-b border-brand-border hover:bg-brand-surface transition-colors duration-150 cursor-pointer w-full overflow-hidden"
     >
       {/* Left green accent on hover */}
       <div className="w-[3px] bg-transparent group-hover:bg-brand-bright transition-colors duration-150 shrink-0" />

@@ -178,8 +178,8 @@ const Home = () => {
             <div className="lg:col-span-11">
               <SectionLabel number="02" title="Events" />
 
-              {/* Filters — monospace pills */}
-              <div className="flex flex-wrap gap-2 mb-6">
+              {/* Filters — scrollable on mobile */}
+              <div className="flex overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap gap-2 mb-6 no-scrollbar">
                 {eventTypes.map(type => (
                   <button
                     key={type}

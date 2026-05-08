@@ -37,14 +37,14 @@ const Events = () => {
             A record of knowledge sharing and technical growth.
           </p>
 
-          {/* Filters */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-8">
-            <div className="flex flex-wrap gap-2">
+          {/* Filters — scrollable on mobile */}
+          <div className="flex flex-col sm:flex-row gap-4 mb-8 overflow-hidden">
+            <div className="flex overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap gap-2 no-scrollbar">
               {types.map(t => (
                 <button
                   key={t}
                   onClick={() => setTypeFilter(t)}
-                  className={`font-mono text-[10px] px-3 py-1.5 tracking-wider uppercase transition-colors border ${
+                  className={`font-mono text-[10px] px-3 py-1.5 tracking-wider uppercase transition-colors border shrink-0 ${
                     typeFilter === t
                       ? 'border-brand-bright text-brand-bright bg-brand-bright/10'
                       : 'border-brand-border text-brand-textMuted hover:text-brand-text hover:border-brand-text'
@@ -54,12 +54,12 @@ const Events = () => {
                 </button>
               ))}
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap gap-2 no-scrollbar">
               {years.map(y => (
                 <button
                   key={y}
                   onClick={() => setYearFilter(String(y))}
-                  className={`font-mono text-[10px] px-3 py-1.5 tracking-wider uppercase transition-colors border ${
+                  className={`font-mono text-[10px] px-3 py-1.5 tracking-wider uppercase transition-colors border shrink-0 ${
                     yearFilter === String(y)
                       ? 'border-brand-gold text-brand-gold bg-brand-gold/10'
                       : 'border-brand-border text-brand-textMuted hover:text-brand-text hover:border-brand-text'

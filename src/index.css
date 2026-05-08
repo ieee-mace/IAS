@@ -258,3 +258,12 @@ a:focus-visible {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
+
+/* ── Scrollbar Hiding ────────────────────────────────────────── */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
