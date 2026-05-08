@@ -2,7 +2,7 @@ export const execom = [
   {
     name: "Deeya Saju",
     role: "Chair",
-    image: "/images/team/Deeya.jpg",
+    image: "./images/team/Deeya.jpg",
     linkedin: "https://www.linkedin.com/in/deeya-saju-858750356",
     phone: "+919496177329",
     showPhone: true,
@@ -11,7 +11,7 @@ export const execom = [
   {
     name: "Abhishek C S",
     role: "Secretary",
-    image: "/images/team/abhishek.jpeg",
+    image: "./images/team/abhishek.jpeg",
     linkedin: "https://www.linkedin.com/in/abhishek-c-s-a8b575356",
     phone: "+916238354892",
     showPhone: true,
@@ -20,7 +20,7 @@ export const execom = [
   {
     name: "Samuel M Dileep",
     role: "Vice Chair",
-    image: "/images/team/samuel.jpeg",
+    image: "./images/team/samuel.jpeg",
     linkedin: "https://www.linkedin.com/in/samuel-m-dileep-b84960314",
     phone: null,
     showPhone: false,
@@ -29,7 +29,7 @@ export const execom = [
   {
     name: "Joanna Mariyam Raju",
     role: "Treasurer",
-    image: "/images/team/joanna.jpeg",
+    image: "./images/team/joanna.jpeg",
     linkedin: null,
     phone: null,
     showPhone: false,
@@ -38,7 +38,7 @@ export const execom = [
   {
     name: "Aaron G Fernandez",
     role: "Joint Secretary",
-    image: "/images/team/aaron.jpeg",
+    image: "./images/team/aaron.jpeg",
     linkedin: null,
     phone: null,
     showPhone: false,

@@ -44,7 +44,7 @@ const EventRow = ({ event, index = 0 }) => {
             alt={event.title} 
             className="w-full h-full object-cover"
             onError={(e) => {
-              e.target.src = '/images/logo.png'
+              e.target.src = './images/logo.png'
               e.target.className = 'w-full h-full object-contain p-2 bg-brand-muted/10'
             }}
           />

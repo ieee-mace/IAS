@@ -31,7 +31,7 @@ const TeamCard = ({ member, index = 0 }) => {
               loading="lazy"
               className="w-full h-full object-cover group-hover:brightness-110 transition-all duration-500"
               onError={(e) => {
-                e.target.src = '/images/logo.png'
+                e.target.src = './images/logo.png'
                 e.target.className = 'w-full h-full object-contain p-6 img-placeholder'
               }}
             />

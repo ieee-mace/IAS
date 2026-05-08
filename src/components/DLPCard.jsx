@@ -19,7 +19,7 @@ const DLPCard = ({ event }) => {
             loading="lazy"
             className="w-full h-full object-cover min-h-[250px]"
             onError={(e) => {
-              e.target.src = '/images/lgw.png'
+              e.target.src = './images/lgw.png'
               e.target.className = 'w-full h-full object-contain p-12 bg-ieee-blue/5 min-h-[250px]'
             }}
           />

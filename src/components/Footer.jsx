@@ -55,7 +55,7 @@ const Footer = () => {
           {/* Logo & Description — left aligned */}
           <div className="md:col-span-5">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/images/logo.png" alt="IEEE IAS" className="h-10" />
+              <img src="./images/logo.png" alt="IEEE IAS" className="h-10" />
               <div>
                 <h3 className="font-heading font-bold text-sm text-brand-text tracking-tight">
                   IEEE IAS SBC MACE

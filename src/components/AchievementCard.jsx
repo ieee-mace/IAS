@@ -21,7 +21,7 @@ const AchievementCard = ({ achievement, index = 0 }) => {
           loading="lazy"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           onError={(e) => {
-            e.target.src = '/images/logo.png'
+            e.target.src = './images/logo.png'
             e.target.className = 'w-full h-full object-contain p-8 img-placeholder'
           }}
         />

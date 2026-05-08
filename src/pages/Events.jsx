@@ -90,7 +90,7 @@ const Events = () => {
               {pastEvents.filter(e => e.image).map((e, i) => (
                 <div key={e.id} className="relative aspect-[3/4] border border-brand-border group overflow-hidden">
                   <img src={e.image} alt={e.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                  onError={(err) => { err.target.src = '/images/logo.png'; err.target.className = 'w-full h-full object-contain p-6 img-placeholder' }} />
+                  onError={(err) => { err.target.src = './images/logo.png'; err.target.className = 'w-full h-full object-contain p-6 img-placeholder' }} />
                   <div className="absolute inset-0 bg-brand-bg/80 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
                     <p className="font-heading font-bold text-sm text-brand-text leading-tight">{e.title}</p>
                     <p className="font-mono text-[10px] text-brand-textMuted mt-1">{new Date(e.date).getFullYear()}</p>

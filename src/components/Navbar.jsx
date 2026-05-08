@@ -35,7 +35,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           <div className="flex items-center justify-between h-14 md:h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 shrink-0">
-              <img src="/images/logo.png" alt="IEEE IAS" className="h-8 md:h-9" />
+              <img src="./images/logo.png" alt="IEEE IAS" className="h-8 md:h-9" />
               <span className="font-heading font-bold text-sm tracking-tight text-brand-text hidden sm:block">
                 IAS SBC MACE
               </span>

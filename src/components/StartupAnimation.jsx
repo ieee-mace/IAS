@@ -61,7 +61,7 @@ const StartupAnimation = ({ onComplete }) => {
     }, [onComplete])
     return (
       <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-brand-bg">
-        <img src="/images/logo.png" alt="IEEE IAS Logo" className="w-24 h-24 mb-6" />
+        <img src="./images/logo.png" alt="IEEE IAS Logo" className="w-24 h-24 mb-6" />
         <h1 className="text-2xl font-bold text-white tracking-wider">{text}</h1>
       </div>
     )
@@ -159,7 +159,7 @@ const StartupAnimation = ({ onComplete }) => {
             transition={{ duration: 0.4 }}
             className="absolute inset-0 flex flex-col items-center justify-center z-10 pt-4"
           >
-            <img src="/images/logo.png" alt="IEEE IAS Logo" className="w-24 h-24 mb-4 object-contain" />
+            <img src="./images/logo.png" alt="IEEE IAS Logo" className="w-24 h-24 mb-4 object-contain" />
             
             <div className="flex space-x-1">
               {text.split('').map((char, index) => (
