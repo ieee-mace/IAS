@@ -10,7 +10,7 @@ const AchievementCard = ({ achievement, index = 0 }) => {
       className="gold-sweep-container relative border-l-4 border-l-brand-gold bg-brand-surface group flex flex-col md:flex-row overflow-hidden col-span-full"
     >
       {/* Poster Side (Left on Desktop, Top on Mobile) */}
-      <div className="w-full md:w-1/3 shrink-0 relative aspect-square overflow-hidden border-b md:border-b-0 md:border-r border-brand-border">
+      <div className="w-full md:w-1/3 shrink-0 relative overflow-hidden border-b md:border-b-0 md:border-r border-brand-border min-h-[300px] md:min-h-full">
         <img
           src={achievement.image}
           alt={achievement.title}
