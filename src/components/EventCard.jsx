@@ -51,7 +51,7 @@ const EventRow = ({ event, index = 0 }) => {
       {/* Center content */}
       <div className="flex-1 py-4 px-4 md:px-6 min-w-0 flex flex-col justify-center">
         <div className="flex items-center gap-2 mb-1 flex-wrap">
-          <h3 className={`font-heading font-bold text-sm md:text-base text-brand-text leading-tight ${isExpanded ? '' : 'truncate'}`}>
+          <h3 className={`font-heading font-bold text-sm md:text-base text-brand-text leading-tight`}>
             {event.title}
           </h3>
           <span className="font-mono text-[10px] px-2 py-0.5 border border-brand-border text-brand-textMuted tracking-wider uppercase shrink-0">
@@ -80,7 +80,7 @@ const EventRow = ({ event, index = 0 }) => {
             </motion.div>
           ) : (
             <>
-              <p className="text-xs text-brand-textMuted line-clamp-1 mb-1">
+              <p className="text-xs text-brand-textMuted mb-1">
                 {event.description}
               </p>
               {event.speaker && (

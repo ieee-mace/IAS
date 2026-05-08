@@ -1,5 +1,33 @@
 export const achievements = [
   {
+    id: "a8",
+    title: "IAS AGM 2025 Invitation — Taiwan",
+    description: "IEEE MACE SB congratulates Mr.Pranav Vinoy, Mr.Abhinav Krishna and Ms.Amritha M for securing the opportunity to attend the IAS Annual General Meeting 2025 in Taiwan.",
+    image: "./images/achievements/taiwan-agm.jpeg",
+    year: "2025",
+  },
+  {
+    id: "a7",
+    title: "Best Student Event Award 2025",
+    description: "IEEE MACE SB proudly announces that Mr. Pranav Vinoy (S8 EA) has been recognised for his exemplary leadership in organizing the National Symposium and Research Colloquium, which received the Best Student Event Award 2025 at the IEEE Kerala Section Awards.",
+    image: "./images/achievements/best-event.jpeg",
+    year: "2025",
+  },
+  {
+    id: "a6",
+    title: "Outstanding Student Volunteer Award 2025",
+    description: "IEEE MACE SB proudly announces that Mr.Pranav Vinoy(S8 EA) has been awarded the Outstanding Student Volunteer Award 2025 for his volunteering efforts in the year 2025 for IEEE IA/IE/PELS Joint Chapter Kerala.",
+    image: "./images/achievements/volunteer-award.jpeg",
+    year: "2025",
+  },
+  {
+    id: "a5",
+    title: "Guest Session Invitation — IIT Jammu & MIET Jammu",
+    description: "IEEE MACE SB presents its heartfelt congratulations to Pranav Vinoy (S7EA) on being invited by IEEE IAS to take sessions at IIT Jammu and MIET Jammu from October 8-11, 2025. Your expertise and passion have earned you this amazing opportunity!",
+    image: "./images/achievements/iit-jammu.jpeg",
+    year: "2025",
+  },
+  {
     id: "a4",
     title: "1st Place — IEEE IAS-IPCSCD Design Competition",
     description: "IEEE IAS SBC MACE proudly celebrates the remarkable achievement of our student team — Abhishek K M, Devika C, Shilpa Santhosh Nair, Jes Gigo, Lakshmipriya S, and Reese Mathew — for winning the IEEE IAS-IPCSCD Engineering Student Chapter Design Competition – South Asia 2025. Competing among talented teams across the region, they secured the prestigious first position along with a cash prize of $2000. This achievement reflects their technical excellence, innovation, teamwork, and dedication, bringing immense pride to IEEE IAS SBC MACE.",

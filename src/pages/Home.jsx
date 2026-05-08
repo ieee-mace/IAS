@@ -74,7 +74,7 @@ const Home = () => {
       {/* ══════════════════════════════════════════════════════════
           HERO — Split-screen terminal/dashboard
           ══════════════════════════════════════════════════════════ */}
-      <section className="relative min-h-screen bg-brand-bg brushed-metal transition-colors duration-300">
+      <section className="relative min-h-[auto] lg:min-h-screen bg-brand-bg brushed-metal transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-36 pb-16 md:pb-24 relative z-10">
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
             {/* Left panel — 55% */}

@@ -1,4 +1,30 @@
 export const events = [
+  {
+    id: "edge-computing-2025",
+    title: "Edge Computing and Sustainable IoT",
+    date: "2025-09-03",
+    type: "Webinar",
+    image: "./images/events/edge-computing.jpeg",
+    description: "An exclusive session on Edge Computing and Sustainable IoT by Gaurav Baghel, Senior SDET at Swiggy. Organized in collaboration with international chapters across Tunisia, El Salvador, Colombia, and Panama.",
+    speaker: "Gaurav Baghel",
+    speakerTitle: "Senior SDET, Swiggy",
+    time: "8:30 PM IST",
+    platform: "Online",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfAFrwShbJVQPLN7CdeqxyaT2EWhkcNfNcNzXM0SXytYNGnzA/viewform",
+    registrationOpen: true,
+  },
+  {
+    id: "ias-connect-2025",
+    title: "IAS Connect 2.0 — Virtual International Bootcamp",
+    date: "2025-09-01",
+    type: "Workshop",
+    image: "./images/events/ias-connect.jpeg",
+    description: "A first-of-its-kind international collaboration! A Virtual International Bootcamp on Industry Applications bringing together the brightest minds across the globe. Featuring global collaborations, industry-driven insights, and expert-led learning.",
+    speaker: "Global Experts",
+    time: "September 2025",
+    platform: "Online",
+    registrationOpen: true,
+  },
   // ── PAST DLP ──────────────────────────────────────────────────────
   {
     id: "dlp-electric-aircraft-2026",
