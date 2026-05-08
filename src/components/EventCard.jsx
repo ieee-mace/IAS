@@ -35,7 +35,7 @@ const EventRow = ({ event, index = 0 }) => {
 
       {/* Optional Image Thumbnail */}
       {event.image && (
-        <div className="hidden sm:block w-24 h-full shrink-0 border-r border-brand-border">
+        <div className="w-16 sm:w-24 h-full shrink-0 border-r border-brand-border">
           <img 
             src={event.image} 
             alt={event.title} 

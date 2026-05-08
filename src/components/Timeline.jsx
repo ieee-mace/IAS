@@ -1,15 +1,11 @@
-import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { motion } from 'framer-motion'
 
 const TimelineItem = ({ item, index }) => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-50px' })
-
   return (
     <motion.div
-      ref={ref}
       initial={{ clipPath: 'inset(0 100% 0 0)' }}
-      animate={isInView ? { clipPath: 'inset(0 0% 0 0)' } : {}}
+      whileInView={{ clipPath: 'inset(0 0% 0 0)' }}
+      viewport={{ once: true, margin: "0px 0px -50px 0px" }}
       transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
       className="flex gap-4 md:gap-6 mb-8"
     >
