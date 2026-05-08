@@ -1,16 +1,14 @@
-import { motion, useInView } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
 
 const TeamCard = ({ member, index = 0 }) => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-30px' })
   const [isFlipped, setIsFlipped] = useState(false)
 
   return (
     <motion.div
-      ref={ref}
       initial={{ clipPath: 'inset(0 100% 0 0)' }}
-      animate={isInView ? { clipPath: 'inset(0 0% 0 0)' } : {}}
+      whileInView={{ clipPath: 'inset(0 0% 0 0)' }}
+      viewport={{ once: true, margin: "0px 0px -50px 0px" }}
       transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.1 }}
       className="group w-full relative aspect-[3/4] perspective-1000 cursor-pointer"
       onClick={() => setIsFlipped(!isFlipped)}

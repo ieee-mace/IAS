@@ -1,10 +1,7 @@
-import { motion, useInView, AnimatePresence } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { useState } from 'react'
 
 const EventRow = ({ event, index = 0 }) => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-50px' })
-
   const dateObj = new Date(event.date)
   const day = dateObj.getDate()
   const month = dateObj.toLocaleDateString('en-US', { month: 'short' }).toUpperCase()
@@ -16,9 +13,9 @@ const EventRow = ({ event, index = 0 }) => {
 
   return (
     <motion.div
-      ref={ref}
       initial={{ clipPath: 'inset(0 100% 0 0)' }}
-      animate={isInView ? { clipPath: 'inset(0 0% 0 0)' } : {}}
+      whileInView={{ clipPath: 'inset(0 0% 0 0)' }}
+      viewport={{ once: true, margin: "0px 0px -50px 0px" }}
       transition={{ duration: 0.5, delay: Math.min(index * 0.08, 0.4), ease: 'easeOut' }}
       onClick={() => setIsExpanded(!isExpanded)}
       className="group flex items-stretch border-b border-brand-border hover:bg-brand-surface transition-colors duration-150 cursor-pointer"

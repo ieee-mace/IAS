@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import StartupAnimation from './components/StartupAnimation'
 import CustomCursor from './components/CustomCursor'
+import ScrollToTop from './components/ScrollToTop'
 
 const Home = lazy(() => import('./pages/Home'))
 const Events = lazy(() => import('./pages/Events'))
@@ -73,6 +74,7 @@ function App() {
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <Suspense fallback={<LoadingFallback />}>
             <AnimatePresence mode="wait">
+              <ScrollToTop />
               <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Home />} />
                 <Route path="/events" element={<Events />} />
