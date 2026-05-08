@@ -1,31 +1,17 @@
 export const events = [
   {
-    id: "edge-computing-2025",
-    title: "Edge Computing and Sustainable IoT",
-    date: "2025-09-03",
+    id: "dlp-linkedin-2025",
+    title: "Engineering Your Professional Identity: LinkedIn for Industry Success",
+    date: "2026-03-11",
     type: "Webinar",
-    image: "./images/events/edge-computing.jpeg",
-    description: "🌐 IAS Connect 2.0 🌐\n\nWe are thrilled to announce that IEEE MACE SB and IEEE IAS SBC MACE, in collaboration with international chapters — IEEE IAS SBC Universidad Don Bosco, IEEE IAS SBC Universidad de El Salvador, IEEE IAS SBC Universidad de Los Andes, IEEE IAS SBC Universidad del Norte, IEEE IAS ISI SBC, and IEEE IAS SBC Panama Section — are hosting an exclusive session on: Edge Computing and Sustainable IoT⚡\n\n🎤 Speaker: Gaurav Baghel - Senior SDET, Swiggy\n📅 Date: September 3rd, 2025\n🕗 Time: 8:30 PM IST",
-    speaker: "Gaurav Baghel",
-    speakerTitle: "Senior SDET, Swiggy",
+    image: "./images/events/linkedin-dlp.jpeg",
+    description: "A session on building a powerful LinkedIn profile, networking with industry professionals, and attracting recruiters.",
+    speaker: "Shiju Roy",
+    speakerTitle: "LinkedIn Top Voice 2024",
     time: "8:30 PM IST",
-    platform: "Online",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfAFrwShbJVQPLN7CdeqxyaT2EWhkcNfNcNzXM0SXytYNGnzA/viewform",
-    registrationOpen: true,
+    platform: "Google Meet",
+    registrationOpen: false,
   },
-  {
-    id: "ias-connect-2.0",
-    title: "IAS Connect 2.0 — Virtual International Bootcamp",
-    date: "2025-09-01",
-    type: "Workshop",
-    image: "./images/events/ias-connect.jpeg",
-    description: "🌟 IEEE MACE SB is organizing a first-of-its-kind international collaboration! 🌟\n\nGet ready for IAS Connect 2.0 – Bigger. Bolder. Global.\nA Virtual International Bootcamp on Industry Applications bringing together the brightest minds across the globe.\n\n📅 September 2025 | 💻 Online\n\n🚀 IAS Connect 2.0 – Connecting Knowledge. Creating Impact.",
-    speaker: "Global Experts",
-    time: "September 2025",
-    platform: "Online",
-    registrationOpen: true,
-  },
-  // ── PAST DLP ──────────────────────────────────────────────────────
   {
     id: "dlp-electric-aircraft-2026",
     title: "Electric Aircraft & Health Management",
@@ -41,20 +27,17 @@ export const events = [
     meetLink: "https://meet.google.com/wwy-hiyn-yzn",
     registrationOpen: false,
   },
-
-  // ── PAST EVENTS ───────────────────────────────────────────────────
   {
     id: "akiassc-2026",
     title: "All Kerala Industry Applications Society Students Conclave (AKIASSC)",
-    date: "2026-03-06", // The event was 6th-8th March 2026
+    date: "2026-03-06",
     type: "Conclave",
     image: "./images/events/akiassc.jpeg",
-    description: "The All Kerala Industry Applications Society Students Conclave (AKIASSC) 2026 was conducted at Mar Athanasius College of Engineering. The event served as a hub for advanced learning and networking opportunities, bringing together students from across Kerala. Hosting over 150 participants, it featured networking sessions, technical talks, and an ideation contest.",
+    description: "The All Kerala Industry Applications Society Students Conclave (AKIASSC) 2026 was conducted at Mar Athanasius College of Engineering. The event served as a hub for advanced learning and networking opportunities, bringing together students from across Kerala.",
     speaker: "Various Speakers",
     speakerTitle: "Industry Experts & Academicians",
     time: "3 Days Event",
     platform: "MACE Campus",
-    registrationLink: null,
     registrationOpen: false,
   },
   {
@@ -71,20 +54,49 @@ export const events = [
     registrationOpen: false,
   },
   {
-    id: "dlp-linkedin-2025",
-    title: "Engineering Your Professional Identity: LinkedIn for Industry Success",
-    date: "2025-03-11",
-    type: "DLP",
-    image: "./images/events/linkedin-dlp.jpeg",
-    description: "A session on building a powerful LinkedIn profile, networking with industry professionals, and attracting recruiters.",
-    speaker: "Shiju Roy",
-    speakerTitle: "LinkedIn Top Voice 2024",
+    id: "edge-computing-2025",
+    title: "Edge Computing and Sustainable IoT",
+    date: "2025-09-03",
+    type: "Webinar",
+    image: "./images/events/edge-computing.jpeg",
+    description: "🌐 IAS Connect 2.0 🌐\n\nExclusive session on: Edge Computing and Sustainable IoT⚡\n\n🎤 Speaker: Gaurav Baghel - Senior SDET, Swiggy\n📅 Date: September 3rd, 2025\n🕗 Time: 8:30 PM IST",
+    speaker: "Gaurav Baghel",
+    speakerTitle: "Senior SDET, Swiggy",
     time: "8:30 PM IST",
-    platform: "Google Meet",
+    platform: "Online",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfAFrwShbJVQPLN7CdeqxyaT2EWhkcNfNcNzXM0SXytYNGnzA/viewform",
     registrationOpen: false,
   },
-
-  // ── PAST EVENTS (from existing site) ──────────────────────────────
+  {
+    id: "ias-connect-2.0",
+    title: "IAS Connect 2.0 — Virtual International Bootcamp",
+    date: "2025-09-01",
+    type: "Workshop",
+    image: "./images/events/ias-connect.jpeg",
+    description: "IAS Connect 2.0 is a first-of-its-kind global virtual bootcamp on Industry Applications jointly organized by Tunisian and Indian chapters. The program aims to connect students and professionals worldwide through expert sessions and industry-oriented learning.",
+    speaker: "Global Experts",
+    time: "September 2025",
+    platform: "Online",
+    registrationOpen: false,
+  },
+  {
+    id: "ignite-md-2025",
+    title: "IGNITE – MD Session",
+    date: "2025-08-23",
+    type: "Seminar",
+    image: "./images/events/ignite.jpeg",
+    description: "IGNITE – MD Session is a Membership Development initiative organized by IEEE MACE SB in collaboration with IEEE IAS, IEEE RAS, and IEEE PELS. The session aims to inspire and empower IEEE members through engaging discussions, shared experiences, and insights into opportunities within IEEE, helping participants strengthen their professional and volunteer journey.",
+    registrationOpen: false,
+  },
+  {
+    id: "mini-rc-robo-2025",
+    title: "Mini RC Robo Competition",
+    date: "2025-07-08",
+    type: "Competition",
+    image: "./images/events/mini-rc.jpeg",
+    description: "The Mini RC Robo Competition, organized as part of the 35 Years Celebration of IEEE MACE SB, is a two-day hands-on event designed exclusively for second-year MACE students. The program combines learning and competition, where participants first explore the fundamentals of building an RC robot and then compete in a dynamic robot assembling challenge, encouraging teamwork, technical creativity, and practical engineering skills.",
+    registrationOpen: false,
+  },
   {
     id: "iiot-smart-industries",
     title: "Rise of IIoT in Smart Industries",
@@ -118,7 +130,7 @@ export const events = [
     date: "2024-08-07",
     type: "DLP",
     image: "./images/events/img2.jpg",
-    description: "Distinguished Lecturer Program featuring Dr. Rajesh Kumar, Professor at MNIT Jaipur, on reinforcement learning applications in electric vehicles. Attended by 65 participants.",
+    description: "Distinguished Lecturer Program featuring Dr. Rajesh Kumar, Professor at MNIT Jaipur, on reinforcement learning applications in electric vehicles.",
     speaker: "Dr. Rajesh Kumar",
     speakerTitle: "Professor, MNIT Jaipur | Senior Member IEEE",
     registrationOpen: false,
@@ -147,7 +159,7 @@ export const events = [
     date: "2024-03-07",
     type: "Competition",
     image: "./images/events/p12.jpg",
-    description: "Essay writing competition exploring transformative impacts of electric vehicles and autonomous driving on transportation. Winner: Ms. Maushmi.",
+    description: "Essay writing competition exploring transformative impacts of electric vehicles and autonomous driving on transportation.",
     registrationOpen: false,
   },
   {
@@ -165,7 +177,7 @@ export const events = [
     date: "2023-05-10",
     type: "Competition",
     image: "./images/events/p4.jpeg",
-    description: "Competition organized as part of La Guerre to foster innovation in Sustainable Manufacturing. Winners: Team Googly from TKM College of Engineering.",
+    description: "Competition organized as part of La Guerre to foster innovation in Sustainable Manufacturing.",
     registrationOpen: false,
   },
   {
@@ -201,7 +213,7 @@ export const events = [
     date: "2023-04-01",
     type: "Workshop",
     image: "./images/events/p5.jpg",
-    description: "Hands-on session using Seeed Xiao ESP32 S3 Sense for practical TinyML applications. Sponsored by Seeed Studio and Makergram.",
+    description: "Hands-on session using Seeed Xiao ESP32 S3 Sense for practical TinyML applications.",
     registrationOpen: false,
   },
   {
@@ -210,7 +222,7 @@ export const events = [
     date: "2023-03-25",
     type: "Workshop",
     image: "./images/events/p6.jpg",
-    description: "Two-day event covering Arduino, ESP32, NODE MCU, sensors, and TinkerCad design. Conducted in collaboration with IEEE IAS, RAS, IoT Club, FABLAB.",
+    description: "Two-day event covering Arduino, ESP32, NODE MCU, sensors, and TinkerCad design.",
     registrationOpen: false,
   },
   {
@@ -222,7 +234,7 @@ export const events = [
     description: "Virtual event featuring Mr. Srikanth Pillai, IEEE IAS CMD Chair, on CMD Awards, Myron Zucker Scholarship, and IEEE IAS membership benefits.",
     registrationOpen: false,
   },
-]
+].sort((a, b) => new Date(b.date) - new Date(a.date))
 
 export const getUpcomingEvents = () =>
   events.filter(e => e.registrationOpen || new Date(e.date) > new Date())

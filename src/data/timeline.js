@@ -12,6 +12,12 @@ export const timeline = [
     icon: "🎓",
   },
   {
+    year: "2024",
+    title: "La Guerre 2.0 — 3rd Place",
+    description: "Secured 3rd place in La Guerre 2.0 through IIoT webinar, IGNITE MDS, and TechTwist competition events.",
+    icon: "🥉",
+  },
+  {
     year: "2025",
     title: "1st Prize — IEEE IAS IPSCD Contest",
     description: "Won 1st Prize for building a smart energy monitoring system in a contest based on sustainable practices in the electrical field.",
